@@ -48,7 +48,7 @@ const SliderCTA = styled.button`
 
     &:hover {
         background: #ffffff;
-        color: $teal;
+        color: teal;
     }
 `;
 
