@@ -1,0 +1,78 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+//Variables
+$teal: #008080;
+
+
+//Typography 
+h1, .h1 {
+    font-size: 3.5rem;
+}
+
+h2, .h2 {
+    font-size: 2.4rem;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+//Global css
+
+.d-flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.border-50 {
+    border-radius: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.global-btn {
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: $teal;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: #ffffff;
+        color: $teal;
+        border: 1px solid $teal;
+    }
+}
