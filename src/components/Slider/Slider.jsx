@@ -28,6 +28,7 @@ const Image = styled.img`
     position: absolute;
     z-index: -1;
     top: 0;
+    object-position: top;
 `;
 
 const Title = styled.h1``;
