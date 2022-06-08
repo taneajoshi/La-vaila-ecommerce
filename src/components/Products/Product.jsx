@@ -15,7 +15,7 @@ const Info = styled.div`
     width: 100%;
     height: 100%;
     align-items: center;
-    background: rgb(45 88 88 / 65%);
+    background: rgb(225 225 225 / 65%);
     transition: all 0.3s linear;
 `;
 
@@ -35,9 +35,19 @@ const Circle = styled.div`
 `;
 
 const Icon = styled.div`
-   svg {
+    background: teal;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
     margin: 0 8px;
+    overflow: hidden;
+   svg {
     font-size: 35px;
+    transition: all 0.3s linear;
+   }
+
+   &:hover svg {
+    transform: scale(1.1);
    }
 `;
 
@@ -49,13 +59,13 @@ const Product = ({item}) => {
         <Circle/>
             <Image src={item.img} />
             <Info>
-                <Icon>
+                <Icon className='flex-center'>
                     <ShoppingCartOutlinedIcon />
                 </Icon>
-                <Icon>
+                <Icon className='flex-center'>
                     <SearchOutlinedIcon />
                 </Icon>
-                <Icon>
+                <Icon className='flex-center'>
                     <FavoriteBorderOutlinedIcon />
                 </Icon>
             </Info>
