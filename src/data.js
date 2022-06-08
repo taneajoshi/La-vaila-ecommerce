@@ -81,4 +81,5 @@ const popularProducts = [
 ];
 
 export default sliderItems;
-export  {categories, popularProducts};
+export  {categories};
+export {popularProducts};

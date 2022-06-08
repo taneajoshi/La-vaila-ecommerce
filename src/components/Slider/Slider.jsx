@@ -79,7 +79,7 @@ const Slider = () => {
         {/* slider wrapper */}
         <Wrapper className="slider-wrapper d-flex">
             {SliderItems.map((item) => (
-                <Slide slideIndex={slideIndex} className='slide'>
+                <Slide key={item.id} slideIndex={slideIndex} className='slide'>
                 <div className='img-container'>
                     <Image src={item.img}/>
                 </div>
