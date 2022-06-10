@@ -1,0 +1,35 @@
+@import '../../app.scss';
+
+footer {
+    padding: 20px;
+    max-width: 1900px;
+}
+
+.footer-logo {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.social-links {
+    margin-top: 15px;
+
+    svg {
+        color: $teal;
+        font-size: 40px;
+        margin: 0 6px;
+        cursor: pointer;
+        transition: all 0.4s linear;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.04);
+        }
+    }
+}
