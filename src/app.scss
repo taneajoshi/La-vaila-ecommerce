@@ -48,21 +48,29 @@ button {
     font-size: 16px;
 }
 
-.col-center {
+.col-center,
+.align-center,
+.justify-center,
+.justify-between  {
     display: flex;
+}
+
+.col-center {
     flex-flow: column wrap;
     align-items: center;
 }
 
 .align-center {
-    display: flex;
     align-items: center;
 }
 
 .justify-center {
-    display: flex;
     justify-content: center;
 }
+
+.justify-between {
+    justify-content: space-between;
+} 
 
 .border-50 {
     border-radius: 50%;
@@ -127,4 +135,10 @@ img {
 
 .col-count-3 {
     column-count: 3;
+}
+
+.global-container {
+    padding: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
 }

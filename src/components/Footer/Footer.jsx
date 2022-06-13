@@ -76,7 +76,7 @@ const Footer = () => {
         <h3>Useful Links</h3>
         <ul className="col-count-3">
           <li>Home</li>
-          <li>man fashion</li>
+          <li>man fashion</li> 
           <li>accessories</li>
           <li>order tracking</li>
           <li>wishlist</li>
