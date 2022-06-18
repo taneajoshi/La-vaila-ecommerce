@@ -14,16 +14,19 @@ const FilterContainer = styled.div``;
 
 const Filter = styled.div`
     margin-bottom: 20px;
-    display: flex;
 `;
 
 const FilterText = styled.h3`
     margin-right: 10px;
 `;
 
-
 const Select = styled.select`
-margin-right: 10px`;
+    margin-right: 10px;
+    padding: 10px 5px;
+    min-width: 100px;
+    border: 1px solid #d3d3d3;
+    color: #444141;`
+;
 const Option = styled.option``;
 
 const ProductList = () => {
@@ -32,7 +35,7 @@ const ProductList = () => {
         <Navbar/>
         <Title>Dresses</Title>
         <FilterContainer className='justify-between'>
-            <Filter>
+            <Filter className='align-center'>
                 <FilterText>Filter Products</FilterText>
                 <Select>
                     <Option disabled selected>Color</Option>
@@ -52,7 +55,7 @@ const ProductList = () => {
                     <Option>XL</Option>
                 </Select>
             </Filter>
-            <Filter>
+            <Filter className='align-center'>
                 <FilterText>Sort Products</FilterText>
                 <Select>
                     <Option selected>Newest</Option>
