@@ -30,8 +30,13 @@ button {
 }
 //Global css
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-center {
