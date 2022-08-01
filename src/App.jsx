@@ -1,10 +1,10 @@
 // import Home from './pages/Home';
 import './app.scss';
-import  Product from './pages/Product';
+import  Cart from './pages/Cart';
 // import ProductList from './pages/ProductList';
 
 const App = () => {
-  return <Product />
+  return <Cart />
 };
 
 export default App; 
