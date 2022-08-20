@@ -28,16 +28,19 @@ const categories = [
         id: 1,
         img: "https://images.pexels.com/photos/2820582/pexels-photo-2820582.jpeg?cs=srgb&dl=pexels-allan-franca-carmo-2820582.jpg&fm=jpg",
         title: "SKIRTS",
+        category: "women",
     },
     {
         id: 2,
         img: "https://images.pexels.com/photos/6630802/pexels-photo-6630802.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-6630802.jpg&fm=jpg",
-        title: "LOUNGEWEAR"
+        title: "LOUNGEWEAR",
+        category: "coat",
     },
     {
         id: 3,
         img: "https://images.pexels.com/photos/7433164/pexels-photo-7433164.jpeg?cs=srgb&dl=pexels-olya-prutskova-7433164.jpg&fm=jpg",
-        title: "LIGHT JACKETS"
+        title: "LIGHT JACKETS",
+        category: "coat",
     }
 ];
 

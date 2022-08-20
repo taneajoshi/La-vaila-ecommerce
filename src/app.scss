@@ -36,7 +36,10 @@ button {
 
 .d-flex {
     display: flex;
-    flex-wrap: wrap;
+}
+
+.d-flex-wrap {
+    @extend .d-flex;
 }
 
 .flex-center {

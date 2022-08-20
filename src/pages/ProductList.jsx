@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
@@ -28,6 +29,19 @@ const Title = styled.h1`
     margin-bottom: 20px`;
 
 const ProductList = () => {
+  const location = useLocation();
+  const category = location.pathname.split("/")[2];
+  const [filter, setFilters]  = useState({});
+
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilters({
+        ...filter,
+        [e.target.name]: value
+    });
+  }
+
+  console.log(filter);
   return (
     <Container className='global-container text-center'>
         <Navbar/>
@@ -35,8 +49,8 @@ const ProductList = () => {
             <FilterContainer className='justify-between'>
                 <Filter className='align-center'>
                     <FilterText>Filter Products</FilterText>
-                    <Select>
-                        <Option disabled selected>Color</Option>
+                    <Select name="color" onChange={handleFilters}>
+                        <Option disabled>Color</Option>
                         <Option>White</Option>
                         <Option>Black</Option>
                         <Option>Red</Option>
@@ -44,8 +58,8 @@ const ProductList = () => {
                         <Option>Yellow</Option>
                         <Option>Green</Option>
                     </Select>
-                    <Select>
-                        <Option disabled selected>Size</Option>
+                    <Select name="size" onChange={handleFilters}>
+                        <Option disabled>Size</Option>
                         <Option>XS</Option>
                         <Option>S</Option>
                         <Option>M</Option>
@@ -56,7 +70,7 @@ const ProductList = () => {
                 <Filter className='align-center'>
                     <FilterText>Sort Products</FilterText>
                     <Select>
-                        <Option selected>Newest</Option>
+                        <Option>Newest</Option>
                         <Option>Low to High</Option>
                         <Option>High to Low</Option>
                     </Select>
